@@ -3,7 +3,7 @@ import { Container } from '@chakra-ui/react';
 
 export default function Post({children}) {
     return (
-        <Container>
+        <Container maxW="100ch">
             {children}
         </Container>
     )
