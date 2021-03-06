@@ -6,7 +6,6 @@ import Link from 'next/link';
 
 export async function getStaticProps() {
     const postData = getAllPosts();
-    console.log(postData)
     // postData will be available as a prop to PostListing at build time:
     return {
         props: {
