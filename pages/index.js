@@ -1,4 +1,4 @@
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import ProjectListing from '../components/ProjectListing';
 import NextLink from 'next/link';
 import { Box, Heading, Text, Link, HStack, Button, Divider } from "@chakra-ui/react"
