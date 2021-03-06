@@ -1,7 +1,6 @@
 import Layout from '../components/Layout';
 import ProjectListing from '../components/ProjectListing';
 import NextLink from 'next/link';
-import Image from 'next/Image';
 import { Box, Heading, Text, Link, HStack, Button, Divider } from "@chakra-ui/react"
 import { HiOutlinePencilAlt, HiOutlineMail } from "react-icons/hi";
 import { GoMarkGithub } from "react-icons/go";

@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/image'
 import { Box, Heading, Text, Link, HStack, VStack, Button, Divider, LinkBox, LinkOverlay } from "@chakra-ui/react";
 
 function ProjectListing(props) {
