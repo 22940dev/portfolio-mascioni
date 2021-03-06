@@ -1,4 +1,4 @@
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import ProjectListing from '../components/ProjectListing';
 import NextLink from 'next/link';
 import Image from 'next/Image';

@@ -1,6 +1,6 @@
 import { CSSReset, ChakraProvider, extendTheme } from "@chakra-ui/react";
 import {MDXProvider} from '@mdx-js/react';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import Post from '../components/Post';
 import CodeBlock from '../components/CodeBlock';
 

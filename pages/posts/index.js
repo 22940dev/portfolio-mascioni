@@ -1,4 +1,4 @@
-import Layout from '../../components/layout';
+import Layout from '../../components/Layout';
 import {Heading} from '@chakra-ui/react';
 import { getAllPosts } from '../../lib/posts';
 import PostSummary from '../../components/PostSummary';
