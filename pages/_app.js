@@ -1,4 +1,4 @@
-import { CSSReset, ChakraProvider } from "@chakra-ui/react";
+import { CSSReset, ChakraProvider, extendTheme } from "@chakra-ui/react";
 import {MDXProvider} from '@mdx-js/react';
 import Layout from '../components/layout';
 import Post from '../components/Post';
@@ -13,9 +13,17 @@ const components = {
   code: props => <CodeBlock {...props} />
 }
 
+const theme = extendTheme({
+  colors: {
+    brand: {
+      line: "#8F50CE"
+    }
+  }
+});
+
 function MyApp({ Component, pageProps }) {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <CSSReset />
       <MDXProvider components={components}>
         <Component {...pageProps} />

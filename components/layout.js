@@ -1,12 +1,15 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { Container } from '@chakra-ui/react';
+import { Container, Box } from '@chakra-ui/react';
 
 export default function Layout({children, pageTitle, home}) {
 
     const title = pageTitle ? `Matt Mascioni / ${pageTitle}` : 'Matt Mascioni';
 
     return (
+        <>
+        <Box w="100%" height={2} bgColor="brand.line">
+        </Box>
         <Container maxW="100ch">
             <Head>
                 <title>{title}</title>
@@ -19,5 +22,6 @@ export default function Layout({children, pageTitle, home}) {
                 {children}
             </Container>
         </Container>
+        </>
     )
 }
