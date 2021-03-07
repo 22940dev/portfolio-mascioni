@@ -27,6 +27,8 @@ function HomeButton(props) {
                     colorScheme="purple"
                     borderColor="brand.line"
                     textColor="brand.line"
+                    width="100%"
+                    mt={[2, 0, 0]}
                 >
                     {props.buttonLabel}
                 </Button>
@@ -46,6 +48,7 @@ function RouterButton(props) {
                         colorScheme="purple"
                         borderColor="brand.line"
                         textColor="brand.line"
+                        width="100%"
                         >
                         {props.buttonLabel}
                     </Button>

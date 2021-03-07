@@ -15,7 +15,7 @@ export default function Home() {
           Hi! My name is Matt. My goal is to build products and tools that improve people's lives— whether it be giving them back more time in their day, or making their work more enjoyable. Huge fan of Python, technical writing, APIs, long-distance running and reading.
         </Text>
 
-        <HStack mt={10}>
+        <HStack mt={10} flexDir={["column", "row", "row"]} alignItems="stretch" spacing={[0, 2, 2]}>
           <HomeButton url="/posts" buttonIcon={<HiOutlinePencilAlt />} buttonLabel="Check out my blog" isRouted />
           <HomeButton url="https://github.com/mm" buttonIcon={<GoMarkGithub />} buttonLabel="GitHub" />
           <HomeButton url="mailto:mascionim@gmail.com" buttonIcon={<HiOutlineMail />} buttonLabel="Email me" />
@@ -36,19 +36,19 @@ export default function Home() {
           <Divider width="40%"/>
         </HStack>
 
-        <Flex mt={8} alignItems="stretch">
+        <Flex mt={8} alignItems="stretch" flexDir={["column", "row", "row"]}>
           <ProjectListing 
             title="Heartbridge"
             url="https://github.com/mm/heartbridge"
             description="A command-line application to help extract heart rate data from an Apple Watch."
           />
-          <Spacer />
+          <Spacer display={[null, "flex", "flex"]} />
           <ProjectListing 
             title="What Should We Play?"
             url="https://whatshouldweplay.xyz"
             description="An index of games to play over a video chat with friends."
           />
-          <Spacer />
+          <Spacer display={[null, "flex", "flex"]} />
           <ProjectListing 
             title="Charlotte"
             url="https://github.com/mm/charlotte-api"

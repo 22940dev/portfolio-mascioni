@@ -13,7 +13,7 @@ function ProjectListing(props) {
 
     return (
         <LinkBox>
-            <Box overflow="hidden" borderRadius="md" borderWidth={2} maxW={250} height="100%">
+            <Box overflow="hidden" borderRadius="md" borderWidth={2} height="100%" maxW={[null, 250, 250]}>
                 <LinkOverlay href={props.url} isExternal>
                 <Box>
                     <Image src={imagePath} alt={props.title} width={250} height={150} layout="responsive"/>
