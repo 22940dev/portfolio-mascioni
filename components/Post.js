@@ -1,10 +1,12 @@
 import {MDXProvider} from '@mdx-js/react';
-import { Container } from '@chakra-ui/react';
+import { Container, Heading, Text } from '@chakra-ui/react';
 
-export default function Post({children}) {
+export default function Post({meta, children}) {
     return (
-        <Container maxW="100ch">
+        <>
+            <Heading size="lg">{meta.title}</Heading>
+            <Text>{meta.date}</Text>
             {children}
-        </Container>
+        </>
     )
 }

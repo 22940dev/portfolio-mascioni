@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { Container, Box } from '@chakra-ui/react';
+import { Container, Box, Flex, Spacer, Heading } from '@chakra-ui/react';
 
 export default function Layout({children, pageTitle, home}) {
 
@@ -15,11 +15,17 @@ export default function Layout({children, pageTitle, home}) {
                 <title>{title}</title>
                 <meta name="description" content="" />
             </Head>
-            {!home &&
-                <Link href="/"><a>Back home</a></Link>
-            }
             <Container maxW="80ch">
+                <>
+                {!home &&
+                <Flex mt={10} mb={5} >
+                    <Heading size="xl">Matt Mascioni</Heading>
+                    <Spacer />
+                    <Link href="/"><a>Back home</a></Link>
+                </Flex>
+                }
                 {children}
+                </>
             </Container>
         </Container>
         </>

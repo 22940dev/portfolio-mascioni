@@ -1,5 +1,5 @@
 import Layout from '../../components/layout';
-import {Heading} from '@chakra-ui/react';
+import {Heading, Divider} from '@chakra-ui/react';
 import { getAllPosts } from '../../lib/posts';
 import PostSummary from '../../components/PostSummary';
 import Link from 'next/link';
@@ -16,12 +16,13 @@ export async function getStaticProps() {
 
 function PostListing({postData}) {
     return (
-        <Layout>
-            <Heading>Posts</Heading>
+        <Layout pageTitle="Blog">
             {
                 postData.map(post => {
                     return (
-                        <PostSummary post={post} key={post.slug}/>
+                        <>
+                            <PostSummary post={post} key={post.slug}/>
+                        </>
                     )
                 })
             }

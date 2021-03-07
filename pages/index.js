@@ -1,6 +1,5 @@
 import Layout from '../components/layout';
 import ProjectListing from '../components/ProjectListing';
-import NextLink from 'next/link';
 import { Box, Heading, Text, HStack, Divider, Flex, Spacer } from "@chakra-ui/react"
 import HomeButton from '../components/HomeButton';
 import { HiOutlinePencilAlt, HiOutlineMail } from "react-icons/hi";
@@ -56,10 +55,6 @@ export default function Home() {
             description="Self-hosted link saving and curation tool. Adding more content here."  
           />
         </Flex>
-
-        {/* <NextLink href="/posts" passHref>
-          <Link colorScheme="red">Blog</Link>
-        </NextLink> */}
       </Box>
     </Layout>
   )

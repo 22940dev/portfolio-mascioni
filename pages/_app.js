@@ -7,7 +7,7 @@ import CodeBlock from '../components/CodeBlock';
 const components = {
   wrapper: props => (
     <Layout pageTitle={props.meta.title}>
-      <Post {...props} />
+      <Post {...props} meta={props.meta} />
     </Layout>
   ),
   code: props => <CodeBlock {...props} />
