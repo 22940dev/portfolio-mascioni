@@ -1,7 +1,8 @@
 import Layout from '../components/layout';
 import ProjectListing from '../components/ProjectListing';
 import NextLink from 'next/link';
-import { Box, Heading, Text, Link, HStack, Button, Divider } from "@chakra-ui/react"
+import { Box, Heading, Text, HStack, Divider, Flex, Spacer } from "@chakra-ui/react"
+import HomeButton from '../components/HomeButton';
 import { HiOutlinePencilAlt, HiOutlineMail } from "react-icons/hi";
 import { GoMarkGithub } from "react-icons/go";
 
@@ -16,9 +17,9 @@ export default function Home() {
         </Text>
 
         <HStack mt={10}>
-          <Button leftIcon={<HiOutlinePencilAlt />} variant="outline" colorScheme="purple">Check out my blog</Button>
-          <Button leftIcon={<GoMarkGithub />} variant="outline" colorScheme="purple">GitHub</Button>
-          <Button leftIcon={<HiOutlineMail />} variant="outline" colorScheme="purple">Email me</Button>
+          <HomeButton url="/posts" buttonIcon={<HiOutlinePencilAlt />} buttonLabel="Check out my blog" isRouted />
+          <HomeButton url="https://github.com/mm" buttonIcon={<GoMarkGithub />} buttonLabel="GitHub" />
+          <HomeButton url="mailto:mascionim@gmail.com" buttonIcon={<HiOutlineMail />} buttonLabel="Email me" />
         </HStack>
 
         <HStack mt={20}>
@@ -36,11 +37,25 @@ export default function Home() {
           <Divider width="40%"/>
         </HStack>
 
-        <HStack mt={8}>
-          <ProjectListing />
-          <ProjectListing />
-          <ProjectListing />
-        </HStack>
+        <Flex mt={8} alignItems="stretch">
+          <ProjectListing 
+            title="Heartbridge"
+            url="https://github.com/mm/heartbridge"
+            description="A command-line application to help extract heart rate data from an Apple Watch."
+          />
+          <Spacer />
+          <ProjectListing 
+            title="What Should We Play?"
+            url="https://whatshouldweplay.xyz"
+            description="An index of games to play over a video chat with friends."
+          />
+          <Spacer />
+          <ProjectListing 
+            title="Charlotte"
+            url="https://github.com/mm/charlotte-api"
+            description="Self-hosted link saving and curation tool. Adding more content here."  
+          />
+        </Flex>
 
         {/* <NextLink href="/posts" passHref>
           <Link colorScheme="red">Blog</Link>
