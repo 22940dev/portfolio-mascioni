@@ -1,6 +1,6 @@
 import Layout from '../components/layout';
 import ProjectListing from '../components/ProjectListing';
-import { Box, Heading, Text, HStack, Divider, Flex, Spacer } from "@chakra-ui/react"
+import { Box, Heading, Text, Stack, HStack, Divider, Flex, Spacer } from "@chakra-ui/react"
 import HomeButton from '../components/HomeButton';
 import { HiOutlinePencilAlt, HiOutlineMail } from "react-icons/hi";
 import { GoMarkGithub } from "react-icons/go";
@@ -36,25 +36,28 @@ export default function Home() {
           <Divider width="40%"/>
         </HStack>
 
-        <Flex mt={8} alignItems="stretch" flexDir={["column", "row", "row"]}>
+        <Stack 
+          mt={8} 
+          alignItems="stretch"
+          direction={["column", "row", "row"]}
+          justifyContent="center"
+        >
           <ProjectListing 
             title="Heartbridge"
             url="https://github.com/mm/heartbridge"
             description="A command-line application to help extract heart rate data from an Apple Watch."
           />
-          <Spacer display={[null, "flex", "flex"]} />
           <ProjectListing 
             title="What Should We Play?"
             url="https://whatshouldweplay.xyz"
             description="An index of games to play over a video chat with friends."
           />
-          <Spacer display={[null, "flex", "flex"]} />
-          <ProjectListing 
+          {/* <ProjectListing 
             title="Charlotte"
             url="https://github.com/mm/charlotte-api"
             description="Self-hosted link saving and curation tool. Adding more content here."  
-          />
-        </Flex>
+          /> */}
+        </Stack>
       </Box>
     </Layout>
   )

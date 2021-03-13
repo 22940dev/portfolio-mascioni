@@ -3,5 +3,9 @@ const withMDX = require('@next/mdx')({
 })
 module.exports = withMDX({
     pageExtensions: ['js', 'jsx', 'mdx'],
-    target: "serverless"
+    target: "serverless",
+    // images: {
+    //     loader: 'cloudinary',
+    //     path: 'https://res.cloudinary.com/daprhszgn/image/upload/'
+    // }
 })
