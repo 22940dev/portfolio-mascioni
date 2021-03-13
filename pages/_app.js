@@ -1,7 +1,8 @@
-import { CSSReset, ChakraProvider, extendTheme, ColorModeScript } from "@chakra-ui/react";
+import { CSSReset, ChakraProvider, extendTheme, ColorModeScript, ListItem, StylesProvider } from "@chakra-ui/react";
 import {MDXProvider} from '@mdx-js/react';
 import Layout from '../components/layout';
 import Post from '../components/Post';
+import { PostH2, PostLi, PostParagraph, PostUl } from '../components/PostComponents';
 import CodeBlock from '../components/CodeBlock';
 
 const components = {
@@ -10,7 +11,10 @@ const components = {
       <Post {...props} meta={props.meta} />
     </Layout>
   ),
-  code: props => <CodeBlock {...props} />
+  code: props => <CodeBlock {...props} />,
+  h2: PostH2,
+  p: PostParagraph,
+  ul: PostUl
 }
 
 const theme = extendTheme({

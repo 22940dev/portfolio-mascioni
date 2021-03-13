@@ -52,11 +52,11 @@ export default function Home() {
             url="https://whatshouldweplay.xyz"
             description="An index of games to play over a video chat with friends."
           />
-          {/* <ProjectListing 
+          <ProjectListing 
             title="Charlotte"
             url="https://github.com/mm/charlotte-api"
             description="Self-hosted link saving and curation tool. Adding more content here."  
-          /> */}
+          />
         </Stack>
       </Box>
     </Layout>
