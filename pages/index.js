@@ -16,7 +16,7 @@ export default function Home() {
         </Text>
 
         <HStack mt={10} flexDir={["column", "row", "row"]} alignItems="stretch" spacing={[0, 2, 2]}>
-          <HomeButton url="/posts" buttonIcon={<HiOutlinePencilAlt />} buttonLabel="Check out my blog" isRouted />
+          <HomeButton url="https://dev.to/mmascioni" buttonIcon={<HiOutlinePencilAlt />} buttonLabel="Check out my blog" />
           <HomeButton url="https://github.com/mm" buttonIcon={<GoMarkGithub />} buttonLabel="GitHub" />
           <HomeButton url="mailto:mascionim@gmail.com" buttonIcon={<HiOutlineMail />} buttonLabel="Email me" />
         </HStack>
@@ -45,18 +45,20 @@ export default function Home() {
           <ProjectListing 
             title="Heartbridge"
             url="https://github.com/mm/heartbridge"
+            imagePath="/heartbridge.png"
             description="A command-line application to help extract heart rate data from an Apple Watch."
           />
           <ProjectListing 
             title="What Should We Play?"
             url="https://whatshouldweplay.xyz"
+            imagePath="/whatshouldweplay.png"
             description="An index of games to play over a video chat with friends."
           />
-          <ProjectListing 
+          {/* <ProjectListing 
             title="Charlotte"
             url="https://github.com/mm/charlotte-api"
             description="Self-hosted link saving and curation tool. Adding more content here."  
-          />
+          /> */}
         </Stack>
       </Box>
     </Layout>

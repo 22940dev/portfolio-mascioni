@@ -5,6 +5,7 @@ import Post from '../components/Post';
 import { PostH2, PostLi, PostParagraph, PostUl } from '../components/PostComponents';
 import CodeBlock from '../components/CodeBlock';
 
+// For MDX Post Config:
 const components = {
   wrapper: props => (
     <Layout pageTitle={props.meta.title}>
@@ -17,6 +18,7 @@ const components = {
   ul: PostUl
 }
 
+// Chakra Theme Config
 const theme = extendTheme({
   colors: {
     brand: {
@@ -26,6 +28,7 @@ const theme = extendTheme({
   initialColorMode: "light",
   useSystemColorMode: true
 });
+
 
 function MyApp({ Component, pageProps }) {
   return (
