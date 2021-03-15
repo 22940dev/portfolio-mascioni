@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Layout from '../components/layout';
 import ProjectListing from '../components/ProjectListing';
 import { Box, Heading, Text, Stack, HStack, Divider, Flex, Spacer } from "@chakra-ui/react"
@@ -9,8 +10,13 @@ export default function Home() {
   return (
     <Layout pageTitle="" home>
       <Box mt={10}>
-        <Heading size="xl">Matt Mascioni</Heading>
-        <Heading size="md">Web Developer in Toronto</Heading>
+        <HStack spacing={5}>
+          <Image src="/me.png" height={80} width={80}/>
+          <Box>
+            <Heading size="xl">Matt Mascioni</Heading>
+            <Heading size="md" mt={1}>Web Developer in Toronto</Heading>
+          </Box>
+        </HStack>
         <Text mt={9}>
           Hi! My name is Matt. My goal is to build products and tools that improve people's lives— whether it be giving them back more time in their day, or making their work more enjoyable. Huge fan of Python, technical writing, APIs, long-distance running and reading.
         </Text>
@@ -54,11 +60,6 @@ export default function Home() {
             imagePath="/whatshouldweplay.png"
             description="An index of games to play over a video chat with friends."
           />
-          {/* <ProjectListing 
-            title="Charlotte"
-            url="https://github.com/mm/charlotte-api"
-            description="Self-hosted link saving and curation tool. Adding more content here."  
-          /> */}
         </Stack>
       </Box>
     </Layout>

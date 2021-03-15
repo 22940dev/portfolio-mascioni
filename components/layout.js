@@ -6,6 +6,8 @@ export default function Layout({children, pageTitle, home}) {
 
     const title = pageTitle ? `Matt Mascioni / ${pageTitle}` : 'Matt Mascioni';
 
+    const description = home ? "Back-end web developer in Toronto." : ""
+
     return (
         <>
         <Box w="100%" height={2} bgColor="brand.line">
@@ -13,7 +15,7 @@ export default function Layout({children, pageTitle, home}) {
         <Container maxW="100ch">
             <Head>
                 <title>{title}</title>
-                <meta name="description" content="" />
+                <meta name="description" content={description} />
             </Head>
             <Container maxW="80ch">
                 <>
