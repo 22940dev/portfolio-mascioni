@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { Container, Box, Flex, Spacer, Heading } from '@chakra-ui/react';
+import { Container, Box, Flex, Spacer, Heading, Switch, useColorMode, HStack, Icon, useColorModeValue } from '@chakra-ui/react';
+import { HiSun, HiMoon } from 'react-icons/hi';
 
 export default function Layout({children, pageTitle, home}) {
 
@@ -8,10 +9,24 @@ export default function Layout({children, pageTitle, home}) {
 
     const description = home ? "Back-end web developer in Toronto." : ""
 
+    const {colorMode, toggleColorMode} = useColorMode();
+    const sunOpacity = useColorModeValue(1, 0.25);
+    const moonOpacity = useColorModeValue(0.25, 1);
+
     return (
         <>
         <Box w="100%" height={2} bgColor="brand.line">
         </Box>
+        <HStack justifyContent="flex-end" alignItems="center" padding={2}>
+            <Icon as={HiSun} color="#FAC748" opacity={sunOpacity} />
+            <Switch 
+                onChange={toggleColorMode} 
+                isChecked={colorMode === 'dark'}
+                colorScheme="blackAlpha"
+            />
+            <Icon as={HiMoon} color="brand.line" opacity={moonOpacity} />
+        </HStack>
+
         <Container maxW="100ch">
             <Head>
                 <title>{title}</title>

@@ -1,4 +1,4 @@
-import { LinkBox, LinkOverlay, Button } from "@chakra-ui/react";
+import { LinkBox, LinkOverlay, Button, useColorModeValue } from "@chakra-ui/react";
 import NextLink from 'next/link';
 
 /**
@@ -9,6 +9,8 @@ import NextLink from 'next/link';
  * @returns 
  */
 function HomeButton(props) {
+
+    const purpleColor = useColorModeValue("brand.line", "brand.buttonDark");
 
     if (props.isRouted) {
         // The component is a bit different if we're linking somewhere
@@ -25,8 +27,8 @@ function HomeButton(props) {
                     leftIcon={props.buttonIcon}
                     variant="outline"
                     colorScheme="purple"
-                    borderColor="brand.line"
-                    textColor="brand.line"
+                    borderColor={purpleColor}
+                    textColor={purpleColor}
                     width="100%"
                     mt={[2, 0, 0]}
                 >
@@ -38,6 +40,8 @@ function HomeButton(props) {
 }
 
 function RouterButton(props) {
+
+    const purpleColor = useColorModeValue("brand.line", "brand.line");
     return (
         <LinkBox>
             <NextLink href={props.url} passHref>
@@ -46,8 +50,8 @@ function RouterButton(props) {
                         leftIcon={props.buttonIcon}
                         variant="outline"
                         colorScheme="purple"
-                        borderColor="brand.line"
-                        textColor="brand.line"
+                        borderColor={purpleColor}
+                        textColor={purpleColor}
                         width="100%"
                         >
                         {props.buttonLabel}

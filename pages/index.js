@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import Layout from '../components/layout';
 import ProjectListing from '../components/ProjectListing';
-import { Box, Heading, Text, Stack, HStack, Divider, Flex, Spacer } from "@chakra-ui/react"
+import { Box, Heading, Text, Stack, HStack, Divider } from "@chakra-ui/react"
 import HomeButton from '../components/HomeButton';
 import { HiOutlinePencilAlt, HiOutlineMail } from "react-icons/hi";
 import { GoMarkGithub } from "react-icons/go";
 
 export default function Home() {
+
   return (
     <Layout pageTitle="" home>
       <Box mt={10}>

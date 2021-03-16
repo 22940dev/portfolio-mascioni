@@ -22,7 +22,8 @@ const components = {
 const theme = extendTheme({
   colors: {
     brand: {
-      line: "#8F50CE"
+      line: "#8F50CE",
+      buttonDark: "#D7C0ED"
     }
   },
   initialColorMode: "light",
