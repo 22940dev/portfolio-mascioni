@@ -23,6 +23,7 @@ export default function Layout({children, pageTitle, home}) {
                 onChange={toggleColorMode} 
                 isChecked={colorMode === 'dark'}
                 colorScheme="blackAlpha"
+                size="sm"
             />
             <Icon as={HiMoon} color="brand.line" opacity={moonOpacity} />
         </HStack>

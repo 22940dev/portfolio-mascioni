@@ -26,7 +26,6 @@ const theme = extendTheme({
       buttonDark: "#D7C0ED"
     }
   },
-  initialColorMode: "light",
   useSystemColorMode: true
 });
 
