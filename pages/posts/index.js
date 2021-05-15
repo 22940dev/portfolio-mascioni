@@ -1,8 +1,6 @@
 import Layout from '../../components/layout';
-import {Heading, Divider} from '@chakra-ui/react';
 import { getAllPosts } from '../../lib/posts';
 import PostSummary from '../../components/PostSummary';
-import Link from 'next/link';
 
 export async function getStaticProps() {
     const postData = getAllPosts();

@@ -19,7 +19,7 @@ export default function Home() {
           </Box>
         </HStack>
         <Text mt={9}>
-          Hi! My name is Matt. My goal is to build products and tools that improve people's lives— whether it be giving them back more time in their day, or making their work more enjoyable. Huge fan of Python, technical writing, APIs, long-distance running and reading.
+          Hi! My name is Matt. My goal is to build products and tools that improve people's lives— whether it be giving them back more time in their day, or making their work more enjoyable. Huge fan of Python, technical writing, APIs, long-distance running, and reading.
         </Text>
 
         <HStack mt={10} flexDir={["column", "row", "row"]} alignItems="stretch" spacing={[0, 2, 2]}>
@@ -44,16 +44,17 @@ export default function Home() {
         </HStack>
 
         <Stack 
-          mt={8} 
+          mt={8}
+          mb={8}
           alignItems="stretch"
           direction={["column", "row", "row"]}
           justifyContent="center"
         >
           <ProjectListing 
             title="Heartbridge"
-            url="https://github.com/mm/heartbridge"
+            url="https://pypi.org/project/heartbridge/"
             imagePath="/heartbridge.png"
-            description="A command-line application to help extract heart rate data from an Apple Watch."
+            description="A command-line application to help extract heart rate data and more from the iOS Health app."
           />
           <ProjectListing 
             title="What Should We Play?"
@@ -63,6 +64,6 @@ export default function Home() {
           />
         </Stack>
       </Box>
-    </Layout>
+    </Layout> 
   )
 }

@@ -1,8 +1,8 @@
-import { CSSReset, ChakraProvider, extendTheme, ColorModeScript, ListItem, StylesProvider } from "@chakra-ui/react";
+import { CSSReset, ChakraProvider, extendTheme, ColorModeScript } from "@chakra-ui/react";
 import {MDXProvider} from '@mdx-js/react';
 import Layout from '../components/layout';
 import Post from '../components/Post';
-import { PostH2, PostLi, PostParagraph, PostUl } from '../components/PostComponents';
+import { PostH2, PostParagraph, PostUl } from '../components/PostComponents';
 import CodeBlock from '../components/CodeBlock';
 
 // For MDX Post Config:
