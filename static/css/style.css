@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .border-1 {
+        border-width: 1px;
+    }
+}
+
+.link {
+    @apply inline-flex items-center space-x-1 p-2 border-purple-400 border-1 rounded-md font-medium text-purple-900;
+}
