@@ -1,12 +1,21 @@
 import Image from "next/image";
-import { Box, Heading, Text, LinkBox, LinkOverlay, Tag, TagLeftIcon, TagLabel, HStack } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Text,
+  LinkBox,
+  LinkOverlay,
+  Tag,
+  TagLeftIcon,
+  TagLabel,
+  HStack,
+} from "@chakra-ui/react";
 import { DiPython, DiReact } from "react-icons/di";
 
 const TECH_ICON_MAPPING = {
-  'Python': DiPython,
-  'React': DiReact
-}
-
+  Python: DiPython,
+  React: DiReact,
+};
 
 /**
  * Lists a side project on the homepage.
@@ -22,7 +31,7 @@ function ProjectListing(props) {
         <TagLeftIcon as={TECH_ICON_MAPPING[element]} />
         <TagLabel>{element}</TagLabel>
       </Tag>
-    )
+    );
   });
 
   return (

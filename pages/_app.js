@@ -4,7 +4,6 @@ import {
   extendTheme,
   ColorModeScript,
 } from "@chakra-ui/react";
-import Layout from "../components/layout";
 
 // Chakra Theme Config
 const theme = extendTheme({

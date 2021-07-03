@@ -11,7 +11,7 @@ export default function Home() {
     <Layout pageTitle="" home>
       <Box mt={10}>
         <HStack spacing={5}>
-          <Image src="/me.png" height={80} width={80} />
+          <Image src="/me.png" height={80} width={80} alt="A picture of Matt" />
           <Box>
             <Heading size="xl">Matt Mascioni</Heading>
             <Heading size="md" mt={1}>
@@ -20,8 +20,8 @@ export default function Home() {
           </Box>
         </HStack>
         <Text mt={9}>
-          Hi! My name is Matt. I love working with Python, building APIs and 
-          writing docs. When I'm not coding, I enjoy reading, running and 
+          Hi! My name is Matt. I love working with Python, building APIs, and
+          writing docs. When I'm not coding, I enjoy reading, running, and
           coming up with the <s>worst</s> best puns possible.
         </Text>
 
@@ -75,14 +75,16 @@ export default function Home() {
             url="https://pypi.org/project/heartbridge/"
             imagePath="/heartbridge.png"
             description="A command-line application to help extract heart rate data and more from the iOS Health app."
-            tech={['Python']}
+            altText="Screenshot of the Heartbridge CLI being used"
+            tech={["Python"]}
           />
           <ProjectListing
             title="What Should We Play?"
             url="https://whatshouldweplay.xyz"
             imagePath="/whatshouldweplay.png"
             description="An place to discover and contribute games to play over a video chat with friends."
-            tech={['Python', 'React']}
+            altText="Screenshot of the collection of games available on What Should We Play"
+            tech={["Python", "React"]}
           />
         </Stack>
       </Box>
