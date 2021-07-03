@@ -42,7 +42,7 @@ export default function Home() {
             buttonLabel="GitHub"
           />
           <HomeButton
-            url="mailto:mascionim@gmail.com"
+            url="mailto:matt@mascioni.ca"
             buttonIcon={<HiOutlineMail />}
             buttonLabel="Email me"
           />
