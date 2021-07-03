@@ -8,12 +8,20 @@ if (process.env.NETLIFY) {
         images: {
             loader: 'cloudinary',
             path: 'https://res.cloudinary.com/daprhszgn/image/upload/'
+        },
+        i18n: {
+            locales: ["en"],
+            defaultLocale: "en"
         }
     };
 } else {
     module.exports = {
         pageExtensions: ['js', 'jsx'],
-        target: "serverless"
+        target: "serverless",
+        i18n: {
+            locales: ["en"],
+            defaultLocale: "en"
+        }
     };
 }
 

@@ -55,7 +55,7 @@ export default function Home() {
             casing="uppercase"
             width="50%"
             align="center"
-            color="gray.400"
+            color="#49596E"
             fontWeight="bold"
           >
             Recent Projects
