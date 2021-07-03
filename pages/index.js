@@ -20,10 +20,9 @@ export default function Home() {
           </Box>
         </HStack>
         <Text mt={9}>
-          Hi! My name is Matt. My goal is to build products and tools that
-          improve people's lives— whether it be giving them back more time in
-          their day, or making their work more enjoyable. Huge fan of Python,
-          technical writing, APIs, long-distance running, and reading.
+          Hi! My name is Matt. I love working with Python, building APIs and 
+          writing docs. When I'm not coding, I enjoy reading, running and 
+          coming up with the <s>worst</s> best puns possible.
         </Text>
 
         <HStack
@@ -50,7 +49,7 @@ export default function Home() {
         </HStack>
 
         <HStack mt={20}>
-          <Divider width="40%" />
+          <Divider width="100%" />
           <Text
             fontSize="sm"
             casing="uppercase"
@@ -59,9 +58,9 @@ export default function Home() {
             color="gray.400"
             fontWeight="bold"
           >
-            Recent Side Projects
+            Recent Projects
           </Text>
-          <Divider width="40%" />
+          <Divider width="100%" />
         </HStack>
 
         <Stack
@@ -76,12 +75,14 @@ export default function Home() {
             url="https://pypi.org/project/heartbridge/"
             imagePath="/heartbridge.png"
             description="A command-line application to help extract heart rate data and more from the iOS Health app."
+            tech={['Python']}
           />
           <ProjectListing
             title="What Should We Play?"
             url="https://whatshouldweplay.xyz"
             imagePath="/whatshouldweplay.png"
-            description="An index of games to play over a video chat with friends."
+            description="An place to discover and contribute games to play over a video chat with friends."
+            tech={['Python', 'React']}
           />
         </Stack>
       </Box>

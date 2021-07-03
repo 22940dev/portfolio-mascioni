@@ -41,6 +41,8 @@ export default function Layout({ children, pageTitle, home }) {
         <Head>
           <title>{title}</title>
           <meta name="description" content={description} />
+          <meta name="theme-color" content="#8F50CE" />
+          <link rel="icon" href="/favicon.io" />
         </Head>
         <Container maxW="80ch">
           <>
