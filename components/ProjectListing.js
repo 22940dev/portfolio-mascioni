@@ -23,7 +23,7 @@ function ProjectListing(props) {
             >
                 <LinkOverlay href={props.url} isExternal>
                     <Box>
-                        <Image src={imagePath} alt={props.title} width={300} height={200} layout="responsive"/>
+                        <Image src={imagePath} alt={altText} width={300} height={200} layout="responsive"/>
                     </Box>
                     <Box px={4} py={4}>
                         <Heading fontSize={16}>{props.title}</Heading>
